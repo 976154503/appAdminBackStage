@@ -6,8 +6,8 @@
       <el-form ref="form" :model="form" label-width="80px" class="login-form">
         <p class="login-title">XXX小程序应用系统</p>
         <el-input v-model="form.name" placeholder="请输入手机号" class="form-input"></el-input>
-        <el-input placeholder="请输入密码" class="form-input"></el-input>
-        <el-button type="primary" class="fluid mt15 mb15">登&nbsp;&nbsp;陆</el-button>
+        <el-input v-model="form.password" placeholder="请输入密码" type="password" class="form-input"></el-input>
+        <el-button type="primary" class="fluid mt15 mb15" @click='submit()'>登&nbsp;&nbsp;陆</el-button>
       </el-form>
   </div>
 </template>
@@ -18,8 +18,27 @@ export default {
   data() {
     return {
       form: {
-        name: ''
+        name: '',
+        password: ''
       }
+    }
+  },
+  methods: {
+    submit() {
+        if(!this.form.name){
+          this.$message({
+            message: '手机号未填写',
+            type: 'warning'
+          });
+          return;
+        }
+        if(!this.form.password){
+          this.$message({
+            message: '密码未填写',
+            type: 'warning'
+          });
+          return;
+        }
     }
   }
 }
