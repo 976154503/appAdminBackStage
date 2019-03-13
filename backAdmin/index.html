@@ -28,24 +28,30 @@
   </head>
   <body>
     <div class="page login-page">
+      <div class="row login-head">
+          <p>XXX小程序管理后台</p>
+      </div>
       <div class="container d-flex align-items-center">
-        <div class="form-holder ">
+        <div class="form-holder">
           <div class="row">
             <!-- Form Panel-->
-            <div class="col-lg-6 m-auto bg-white has-shadow">
-              <div class="form d-flex align-items-center">
+            <div class="col-lg-5 m-auto bg-white has-shadow rounded">
+              <div class="form d-flex align-items-center radius-5">
                 <div class="content">
                   <form method="post" class="form-validate">
                     <div class="form-group">
                       <input id="login-username" type="text" name="用户名" required data-msg="Please enter your username" class="input-material">
                       <label for="login-username" class="label-material">请输入用户名</label>
+                      <div id="username-error" class="help-block"></div>
                     </div>
                     <div class="form-group">
                       <input id="login-password" type="password" name="密码" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">请输入密码</label>
-                    </div><a id="login" href="index.html" class="btn btn-primary">登陆</a>
+                      <div id="password-error" class="help-block"></div>
+                    </div>
+                    <a id="login" href="javascript:;" class="btn btn-primary btn-block">登陆</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">找回密码?</a><br><small>想要注册?➡️ </small><a href="register.html" class="signup">注册</a>
+                  </form><a href="#" class="forgot-pass">找回密码?</a><br><small>想要注册? </small><a href="register.html" class="signup">注册</a>
                 </div>
               </div>
             </div>
@@ -67,5 +73,6 @@
     <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
+    <script src="js/page.js"></script>
   </body>
 </html>

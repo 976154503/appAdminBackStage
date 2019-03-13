@@ -313,7 +313,7 @@ input {
 }
 
 .page {
-  background: #EEF5F9;
+  background: #eaeef2;
 }
 
 .page .text-white {
@@ -1901,7 +1901,6 @@ input.input-material.is-invalid ~ label {
   height: 100%;
   display: block;
   z-index: -1;
-  background: url(../images/bg.jpg);
   background-size: cover;
   -webkit-filter: blur(10px);
   filter: blur(10px);
