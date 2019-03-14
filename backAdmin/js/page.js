@@ -39,9 +39,15 @@ var checkPassword = function (id,errorId){
     feedback.innerHTML="";
     return true;
 }
-var flag = true;
 login.on('click',function(){
     if(checkUserName('login-username','username-error') && checkPassword('login-password','password-error')){
         window.location = 'home.html';
     }
+});
+$("#fileInput").fileinput({
+    showUpload: false,
+    showCaption: false,
+    browseClass: "btn btn-primary",
+    fileType: "any",
+    previewFileIcon: ""
 });

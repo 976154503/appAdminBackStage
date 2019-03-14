@@ -1,7 +1,4 @@
 /* your styles go here */
-.w1180 {
-}
-
 .login-head p {
     background: #796AEE;
     width: 100%;
@@ -27,6 +24,10 @@
     padding-right: 15px;
 }
 
+.pt30 {
+    padding-top: 30px;
+}
+
 .pb {
     padding-bottom: 15px;
 }
@@ -39,6 +40,14 @@
     margin-bottom: 15px;
 }
 
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
 .focus-images {
     border-radius: 6px;
 }
@@ -48,4 +57,94 @@ li.list-notice {
     font-size: 14px;
     height: 30px;
     line-height: 30px;
+}
+
+.hot-app-img {
+    background-color: #e5f6fd;
+}
+
+.hot-app-img img {
+    margin: 22px auto;
+}
+
+p.desc-title {
+    color: #3c3c3c;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.desc-subtitle {
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.hot-app-desc {
+    background-color: #f2fbfe;
+}
+
+.focus-table {
+    border: 1px solid #e1e6eb;
+}
+
+.focus-table-index {
+    width: 10%;
+}
+
+.focus-table-images {
+    width: 20%;
+}
+
+.focus-table-title {
+    width: 35%;
+}
+
+.focus-table-size ,.focus-table-type {
+    width: 10%;
+}
+
+.focus-table-edit {
+    width: 15%;
+}
+
+.table-images {
+    width: 120px;
+}
+
+.focus-table td ,.focus-table th {
+    vertical-align:middle;
+}
+
+.focus-index {
+    color: #606266;
+    font-weight: normal
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #eee;
+    margin: 30px 0;
+}
+
+.ele-relative {
+    position: relative;
+}
+
+.ele-absolute {
+    position: absolute;
+}
+
+.app-image-wrap {
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.app-images {
+    overflow-x: hidden;
+    height: -webkit-fill-available;
+}
+
+.guide-images {
+    height: -webkit-fill-available;
 }
