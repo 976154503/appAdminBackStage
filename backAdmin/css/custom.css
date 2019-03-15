@@ -148,3 +148,12 @@ p.desc-title {
 .guide-images {
     height: -webkit-fill-available;
 }
+
+.app-image-edit {
+    z-index: 1;
+    width: 100%;
+}
+
+.app-images-btn {
+    margin: 20px 0 10px 50px;
+}
