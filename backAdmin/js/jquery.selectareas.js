@@ -768,6 +768,7 @@
             // Bind an event handler to the "mousedown" event of the trigger layer
             this.$trigger.mousedown($.proxy(this.newArea, this)).on("touchstart", $.proxy(this.newArea, this));
         }
+        //允许拖动操作
         /*if (this.options.allowNudge) {
             $('html').keydown(function (e) { // move selection with arrow keys
 			    e.preventDefault();

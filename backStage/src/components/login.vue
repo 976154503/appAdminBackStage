@@ -28,14 +28,14 @@ export default {
             }
         };
     },
-    watch: {    
+     watch: {    
         '$route' (to, from) {   
             this.$router.go(0);   
         }
     },
     methods: {
         submit() {
-        //   let _this = this;
+        //     let _this = this;
         //     if (!this.form.name) {
         //         this.$message({
         //             message: "用户名未填写",

@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <el-button type="primary" class="fluid mt15 mb15" @click="submit()">登&nbsp;&nbsp;陆</el-button>
   </div>
 </template>
 
